@@ -1,0 +1,20 @@
+{
+  "name": "woaiai-worker",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-02-14",
+  "compatibility_flags": ["nodejs_compat"],
+
+  // D1 database binding
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "woaiai-db",
+      "database_id": "TODO_REPLACE_WITH_ACTUAL_DB_ID"
+    }
+  ],
+
+  // Environment variables (non-secret)
+  "vars": {
+    "BETTER_AUTH_URL": "http://localhost:8787"
+  }
+}

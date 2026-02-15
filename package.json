@@ -1,0 +1,26 @@
+{
+  "name": "woaiai-worker",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:migrate": "curl -X POST http://localhost:8787/api/auth/migrate"
+  },
+  "dependencies": {
+    "better-auth": "^1.2.7",
+    "hono": "^4.7.4",
+    "kysely-d1": "^0.4.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250214.0",
+    "typescript": "^5.7.3",
+    "wrangler": "^4.4.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "workerd"
+    ]
+  }
+}
